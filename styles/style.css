@@ -3,7 +3,67 @@
 :root {
     /*Variables*/
     --cor0: #FFFFFF;
-    --cor1: #000000;
-    --cor2: #49A09D;
-    --cor3: #5F2C82;
+    --cor1: #00000073;
+    --cor2: #000000;
+    --cor3: #49A09D;
+    --cor4: #5F2C82;
+}
+
+* {
+    /*Box model stuff*/
+    margin: 0px;
+    padding: 0px;
+    /*Typography stuff*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*Miscellaneous*/
+    box-sizing: border-box;
+}
+
+body,
+html {
+    /*Box model stuff*/
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor4);
+}
+
+main {
+    /*Positioning stuff*/
+    position: relative;
+    /*Box model stuff*/
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    /*Positioning stuff*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*Box model stuff*/
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--cor0);
+    /*Manipulations stuff*/
+    transform: translate(-50%, -50%);
+    /*Miscellaneous*/
+    overflow: hidden;
+    box-shadow: 0px 0px 10px var(--cor1);
+}
+
+div#imagem {
+    /*Display stuff*/
+    display: block;
+    /*Box model stuff*/
+    height: 200px;
+    background-size: cover;
+    background: var(--cor3) url('../images/sleep-small.jpg') no-repeat;
+}
+
+div#formulario {
+    /*Display stuff*/
+    display: block;
+    /*Box model stuff*/
+    padding: 10px;
 }
