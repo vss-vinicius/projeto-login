@@ -24,6 +24,7 @@
     section#login {
         height: 95vh;
         width: 95vw;
+        overflow-y: auto;
     }
 
     div#imagem {
@@ -41,6 +42,9 @@
 
     section#login {
         width: 80vw;
+        height: 350px;
+        display: flex; /* Adiciona um display flex para centralizar */
+        align-items: center; /* Centraliza verticalmente */
     }
 
     div#imagem {
@@ -54,6 +58,11 @@
     div#formulario {
         float: right;
         width: 70%;
+        margin: 0 auto; /* Centraliza horizontalmente com margem automática */
+    }
+
+    p {
+        text-align: center;
     }
 }
 
@@ -65,6 +74,7 @@
 
     section#login {
         width: 990px;
+        height: 350px;
     }
 
     div#imagem {
@@ -72,6 +82,7 @@
         width: 50%;
         height: 100%;
         background-image: url('../images/sleep-big.jpg');
+        background-position: center;
     }
 
     div#formulario {
@@ -84,6 +95,8 @@
     }
 
     div#formulario>p {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        text-align: center;
+        margin: 20px 0px;
     }
 }

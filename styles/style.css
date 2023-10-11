@@ -24,7 +24,7 @@ html {
     /*Box model stuff*/
     width: 100vw;
     height: 100vh;
-    background-color: var(--cor4);
+    background-image: linear-gradient(to left, var(--cor4), var(--cor3));
 }
 
 main {
@@ -78,6 +78,99 @@ div#formulario>h1 {
 }
 
 div#formulario>p {
+    /*Typography stuff*/
+    font-size: 0.8em;
+}
+
+form>div.campo {
+    /*Display stuff*/
+    display: block;
+    /*Box model stuff*/
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border: 2px solid var(--cor4);
+    border-radius: 8px;
+    background-color: var(--cor4);
+}
+
+div.campo>label {
+    /*Display stuff*/
+    display: none;
+}
+
+div.campo>span {
+    /*Box model stuff*/
+    width: 39px;
+    padding: 5px;
+    /*Typography stuff*/
+    font-size: 2em;
+    color: var(--cor0);
+}
+
+div.campo>input {
+    /*Box model stuff*/
+    width: calc(100% - 44px);
+    height: 90%;
+    padding: 4px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: var(--cor3);
+    /*Typography stuff*/
+    font-size: 1em;
+    /*Manipulations stuff*/
+    transform: translateY(-12px);
+}
+
+div.campo>input:focus-within {
+    /*Box model stuff*/
+    background-color: var(--cor0);
+}
+
+form>input[type=submit] {
+    /*Display stuff*/
+    display: block;
+    /*Box model stuff*/
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor3);
+    /*Typography stuff*/
+    font-size: 1em;
+    color: var(--cor0);
+    /*Miscellaneous*/
+    cursor: pointer;
+}
+
+form>input[type=submit]:hover {
+    /*Box model stuff*/
+    background-color: var(--cor4);
+}
+
+form>a.botao {
+    /*Display stuff*/
+    display: block;
+    /*Box model stuff*/
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: var(--cor3);
+    /*Typography stuff*/
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+a.botao:hover {
+    /*Box model stuff*/
+    background-color: var(--cor4);
+}
+
+a.botao>span {
     /*Typography stuff*/
     font-size: 0.8em;
 }
