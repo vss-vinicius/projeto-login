@@ -69,3 +69,15 @@ div#formulario {
     /*Box model stuff*/
     padding: 10px;
 }
+
+div#formulario>h1 {
+    /*Box model stuff*/
+    margin-bottom: 10px;
+    /*Typography stuff*/
+    text-align: center;
+}
+
+div#formulario>p {
+    /*Typography stuff*/
+    font-size: 0.8em;
+}
