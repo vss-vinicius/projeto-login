@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+    /*Variables*/
+    --cor0: #FFFFFF;
+    --cor1: #00000073;
+    --cor2: #000000;
+    --cor3: #49A09D;
+    --cor4: #5F2C82;
+}
+
+/*
+    Typical Device Breakpoints
+    --------------------------
+    Small Screens: até 600px;
+    Celular: 600px até 768px
+    Tablet: 768px até 992px
+    Desktop: 992px até 1200px
+    Large Screens: acima de 1200px
+*/
+
+/* Tablet: 768px até 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--cor3), var(--cor4));
+    }
+
+    section#login {
+        width: 80vw;
+    }
+
+    div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-image: url('../images/sleep-tablet.jpg');
+        background-position: center center;
+    }
+
+    div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+/*Desktop: 992px até 1200px*/
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--cor3), var(--cor4));
+    }
+
+    section#login {
+        width: 990px;
+    }
+
+    div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-image: url('../images/sleep-big.jpg');
+    }
+
+    div#formulario {
+        float: right;
+        width: 50%;
+    }
+}

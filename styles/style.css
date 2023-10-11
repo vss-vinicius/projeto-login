@@ -47,9 +47,11 @@ section#login {
     background-color: var(--cor0);
     /*Manipulations stuff*/
     transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
     /*Miscellaneous*/
     overflow: hidden;
     box-shadow: 0px 0px 10px var(--cor1);
+    transition-timing-function: ease;
 }
 
 div#imagem {
